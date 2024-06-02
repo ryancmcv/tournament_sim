@@ -1,5 +1,18 @@
 import numpy as np
+import sys 
 
+round_list = [sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]]
+advance_list = [sys.argv[5], sys.argv[6], sys.argv[7]]
+edge_list = [sys.argv[8], sys.argv[9], sys.argv[10], sys.argv[11]]
+
+print(round_list)
+
+round_list = np.asarray(round_list, dtype=np.int32)
+advance_list = np.asarray(advance_list, dtype=np.int32)
+edge_list = np.asarray(edge_list, dtype=np.int32)
+
+a = ["1.1", "2.2", "3.2"]
+b = np.asarray(a, dtype=float)
 
 def sim_pod(pod_size, advance, edge, entries_remaining):
     eliminated = 0
@@ -63,10 +76,7 @@ contest_size = 672672
 entries_paid = 112112
 entry_fee = 25
 
-round_list = [12, 13, 16, 539]
-advance_list = [2, 1, 1]
 losers_paid_list = [0, 1, 1, 1]
-edge_list = [0, 0, 0, 0]
 
 contest_size = np.prod([a/b for a,b in zip(round_list,advance_list)]) * round_list[-1]
 
