@@ -5,8 +5,6 @@ round_list = [sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]]
 advance_list = [sys.argv[5], sys.argv[6], sys.argv[7]]
 edge_list = [sys.argv[8], sys.argv[9], sys.argv[10], sys.argv[11]]
 
-print(round_list)
-
 round_list = np.asarray(round_list, dtype=np.int32)
 advance_list = np.asarray(advance_list, dtype=np.int32)
 edge_list = np.asarray(edge_list, dtype=np.int32)
