@@ -11,9 +11,6 @@ round_list = np.asarray(round_list, dtype=np.int32)
 advance_list = np.asarray(advance_list, dtype=np.int32)
 edge_list = np.asarray(edge_list, dtype=np.int32)
 
-a = ["1.1", "2.2", "3.2"]
-b = np.asarray(a, dtype=float)
-
 def sim_pod(pod_size, advance, edge, entries_remaining):
     eliminated = 0
     pod = np.random.normal(loc=100, scale=10, size=pod_size-1)
